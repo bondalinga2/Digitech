@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Bird - Login</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #2c2f33;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background-color: #23272a;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            width: 350px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #7289da;
+            font-size: 24px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px; 
+            margin: 10px 0;
+            font-size: 16px;
+            color: white;
+            background-color: #7289da;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        .btn:hover {
+            background-color: #5b6eae;
+        }
+        .login-form {
+            margin-top: 20px;
+        }
+        .login-form input {
+            width: 100%;
+            max-width: 280px; 
+            padding: 10px;
+            margin: 10px auto; 
+            background-color: #2c2f33;
+            border: 1px solid #99aab5;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+        }
+        .login-form input:focus {
+            outline: none;
+            border-color: #7289da;
+        }
+        button.btn {
+            background-color: #7289da;
+        }
+        button.btn:hover {
+            background-color: #5b6eae;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #99aab5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to SigmaDoodles</h1>
+        <p>Login and start chatting!</p>
+        <a href="/signup" class="btn">Sign Up</a>
+
+        <div class="login-form">
+            <h2>Quick Login</h2>
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>        
+
+        <div class="footer">
+            <p>&copy; 2024 SigmaDoodles.</p>
+        </div>
+    </div>
+</body>
+</html>

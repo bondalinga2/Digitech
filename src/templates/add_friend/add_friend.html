@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Bird - Add Friends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c2f33;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff; 
+        }
+        .container {
+            background-color: #23272a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #7289da; 
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #99aab5;
+            border-radius: 5px;
+            background-color: #2c2f33; 
+            color: white; 
+        }
+        input:focus {
+            outline: none;
+            border-color: #7289da;
+        }
+        .btn {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            color: white;
+            background-color: #7289da;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; 
+            box-sizing: border-box;
+        }
+        .btn:hover {
+            background-color: #5b6eae; 
+        }
+        a.btn {
+            background-color: #6c757d;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        a.btn:hover {
+            background-color: #5a6268; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Friend</h1>
+        <form action="/add_friend" method="POST">
+            <input type="text" name="friend_name" placeholder="Friend's Name" required>
+            <button type="submit" class="btn">Add Friend</button>
+        </form>
+        <a href="/friends" class="btn">Back to Friends List</a>
+    </div>
+</body>
+</html>
